@@ -32,7 +32,6 @@ attendu sera le nom de l'animation <span style="color: lightskyblue;font-weight:
 ## Fabriqué avec
  JS vanilla
 ## Versions
-Listez les versions ici
 **Dernière version :** 0.1
 
 ## Auteurs
