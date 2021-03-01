@@ -1,0 +1,56 @@
+.animate-fadein {
+    animation: animate-fadein 2s ease-in forwards;
+}
+@keyframes animate-fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.animate-fadeinup {
+    animation: animate-fadeinup 0.5s ease-in forwards;
+}
+
+
+@keyframes animate-fadeinup  {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 500%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate-bounceinup {
+    animation-name: animate-bounceinup;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes animate-bounceinup {
+    0%, 60%, 75%, 90%, 100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 500%, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(0, -20px, 0);
+    }
+    75% {
+        transform: translate3d(0, 10px, 0);
+    }
+    90% {
+        transform: translate3d(0, -5px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}

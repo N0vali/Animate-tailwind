@@ -1,14 +1,28 @@
+//calculate for marginroot for knowing when the animation should pop
+let ratio = .1
+const y = Math.round(window.innerHeight * ratio)
+// put every animation name who needs opacity 0 at the beginning
+let animationsNeedsOpacity0 = ['fadein','fadeinup','bounceinup'];
 const callback = function (entries) {
     entries.forEach((entry) => {
         var animate = entry.target.dataset.animate
         if (entry.isIntersecting) {
             entry.target.classList.add("animate-"+animate);
+            if (animationsNeedsOpacity0.includes(animate) ){
+                entry.target.classList.remove('opacity-0');
+            }
         } else {
             entry.target.classList.remove("animate-"+animate);
+            if (animationsNeedsOpacity0.includes(animate) ){
+                entry.target.classList.add('opacity-0');
+
+            }
         }
     });
 };
-var observer = new IntersectionObserver(callback);
+var observer = new IntersectionObserver(callback,{
+    rootMargin:`0px 0px -${y}px 0px`
+});
 //select all parentAnimated
 var parentsAnimated = document.querySelectorAll('.animated-parent')
 //init a value for identify correctly the parent
