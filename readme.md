@@ -4,8 +4,11 @@
 
 Un petit script pour implémenter des animations avec <span style="color:#0ea5e9;font-weight:bold">tailwind</span> ou du 
 <span style="color:#264DE4;font-weight:bold">css</span> s'en inspirant.
+
 ##Démo
 <a href="https://codepen.io/Kaleessia/pen/JjbOqKP" style="color:blue;font-weight:bold">-> ici <-</a>
+ 
+ 
 ## Pour commencer
 
 Dans vos <span style="color:lightcoral;font-weight:bold">div</span> où vous souhaitez animer des éléments vous devez :
