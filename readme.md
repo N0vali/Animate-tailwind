@@ -26,7 +26,7 @@ attendu sera le nom de l'animation <span style="color: lightskyblue;font-weight:
 
 <ul>
 <li>Charger le fichier animate.js</li>
-<li>Charger un fichier css comprenant vos animations commençant par "animate"<br> Ou Charger <span style="color:#0ea5e9;font-weight:bold">tailwind</span></li>
+<li>Charger un fichier css comprenant vos animations commençant par "animate-"<br> Ou Charger <span style="color:#0ea5e9;font-weight:bold">tailwind</span></li>
 </ul>
 
 ## Aides
@@ -34,7 +34,6 @@ Vous pouvez rajouter des animations facilement en vous aidant de <a href="https:
 ## Fabriqué avec
  JS vanilla
 ## Versions
-Listez les versions ici
 **Dernière version :** 0.1
 
 ## Auteurs
